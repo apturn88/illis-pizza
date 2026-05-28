@@ -3,8 +3,11 @@ import Image from 'next/image';
 
 export function Footer() {
   return (
-    <footer className="bg-charcoal-900 text-crust-100 mt-24">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8 py-16 grid gap-12 md:grid-cols-3">
+    <footer
+      className="bg-charcoal-900 text-crust-100 mt-20 sm:mt-24"
+      style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
+    >
+      <div className="mx-auto max-w-6xl px-5 sm:px-8 py-14 sm:py-16 grid gap-10 sm:gap-12 md:grid-cols-3">
         <div>
           <Image
             src="/images/logo-circle.png"

@@ -24,14 +24,14 @@ export default function Contact() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/80 via-charcoal-900/55 to-charcoal-900/95" />
         </div>
-        <div className="mx-auto max-w-4xl px-5 sm:px-8 py-28 sm:py-36 text-center">
+        <div className="mx-auto max-w-4xl px-5 sm:px-8 py-24 sm:py-36 text-center">
           <p className="divider-leaf justify-center text-crust-200/80">
             &#10042; Visit &#10042;
           </p>
-          <h1 className="mt-6 font-display text-5xl sm:text-6xl leading-tight">
+          <h1 className="mt-5 sm:mt-6 font-display text-[2.5rem] leading-[1.05] sm:text-6xl sm:leading-tight">
             Find us in Belmont.
           </h1>
-          <p className="mt-5 text-crust-100/85">
+          <p className="mt-5 text-base sm:text-lg text-crust-100/85 leading-relaxed">
             We&rsquo;re on the corner of Belmont Ave and 19 St SW. Look for the red awning and
             the string lights.
           </p>
@@ -39,12 +39,12 @@ export default function Contact() {
       </section>
 
       {/* CONTACT GRID */}
-      <section className="mx-auto max-w-6xl px-5 sm:px-8 mt-20 grid gap-12 lg:grid-cols-2">
+      <section className="mx-auto max-w-6xl px-5 sm:px-8 mt-16 sm:mt-20 grid gap-12 lg:grid-cols-2">
         <div>
           <span className="divider-leaf">&#10042; Where &amp; When &#10042;</span>
-          <h2 className="mt-5 font-display text-4xl text-brick-700">Hours &amp; address</h2>
+          <h2 className="mt-5 font-display text-3xl sm:text-4xl text-brick-700">Hours &amp; address</h2>
 
-          <div className="mt-8 grid gap-8 sm:grid-cols-2 text-charcoal-800">
+          <div className="mt-7 sm:mt-8 grid gap-7 sm:gap-8 sm:grid-cols-2 text-charcoal-800">
             <div>
               <h3 className="text-xs tracking-[0.3em] uppercase text-charcoal-700/60">Address</h3>
               <p className="mt-3 leading-7">
@@ -83,7 +83,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div id="order" className="mt-12 rounded-md border border-crust-200 bg-crust-100/40 p-6">
+          <div id="order" className="mt-10 sm:mt-12 scroll-mt-24 rounded-md border border-crust-200 bg-crust-100/40 p-5 sm:p-6">
             <h3 className="font-display text-2xl text-brick-700">Order pickup</h3>
             <p className="mt-2 text-charcoal-700/90 text-sm leading-relaxed">
               Call us for pickup orders &mdash; we don&rsquo;t take orders by text or DM, so we
@@ -91,7 +91,7 @@ export default function Contact() {
             </p>
             <a
               href="tel:+14035550142"
-              className="mt-5 inline-flex items-center rounded-full bg-brick-700 hover:bg-brick-800 text-crust-50 px-6 py-3 text-xs tracking-widest uppercase transition"
+              className="mt-5 inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-brick-700 hover:bg-brick-800 text-crust-50 px-6 py-3.5 text-xs tracking-widest uppercase transition"
             >
               Call (403) 555&#8209;0142
             </a>
@@ -101,7 +101,7 @@ export default function Contact() {
         {/* FORM */}
         <div>
           <span className="divider-leaf">&#10042; Drop us a line &#10042;</span>
-          <h2 className="mt-5 font-display text-4xl text-brick-700">Send a message</h2>
+          <h2 className="mt-5 font-display text-3xl sm:text-4xl text-brick-700">Send a message</h2>
           <p className="mt-3 text-charcoal-700/90">
             Private events, large orders, feedback, or just a hello &mdash; we read everything.
           </p>
@@ -117,7 +117,7 @@ export default function Contact() {
           <iframe
             title="Map of Belmont, Calgary"
             src="https://www.google.com/maps?q=Belmont+SW+Calgary+AB&output=embed"
-            className="w-full h-[420px] block"
+            className="w-full h-[320px] sm:h-[420px] block"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
@@ -125,9 +125,9 @@ export default function Contact() {
       </section>
 
       {/* CTA */}
-      <section className="mt-24 bg-charcoal-900 text-crust-50">
-        <div className="mx-auto max-w-4xl px-5 sm:px-8 py-20 text-center">
-          <h2 className="font-display text-4xl sm:text-5xl">See you soon.</h2>
+      <section className="mt-16 sm:mt-24 bg-charcoal-900 text-crust-50">
+        <div className="mx-auto max-w-4xl px-5 sm:px-8 py-16 sm:py-20 text-center">
+          <h2 className="font-display text-3xl sm:text-5xl">See you soon.</h2>
           <p className="mt-4 text-crust-100/80">Pizza Worth Coming Home For.</p>
         </div>
       </section>

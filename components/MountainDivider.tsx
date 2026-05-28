@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export function MountainDivider({ label }: { label?: string }) {
   return (
-    <div className="my-20 flex flex-col items-center">
-      <div className="w-full max-w-[26rem] sm:max-w-[32rem]">
+    <div className="my-14 sm:my-20 flex flex-col items-center">
+      <div className="w-full max-w-[22rem] sm:max-w-[32rem]">
         <Image
           src="/images/mountain-divider-clean.png"
           alt=""

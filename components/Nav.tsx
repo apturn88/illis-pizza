@@ -14,18 +14,21 @@ export function Nav() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-crust-50/90 backdrop-blur border-b border-crust-200">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8 flex items-center justify-between h-20">
+    <header
+      className="sticky top-0 z-40 bg-crust-50/90 backdrop-blur border-b border-crust-200"
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
+    >
+      <div className="mx-auto max-w-6xl px-5 sm:px-8 flex items-center justify-between h-16 sm:h-20">
         <Link href="/" className="flex items-center gap-3" aria-label="Illi's Pizza home">
           <Image
             src="/images/logo-circle.png"
             alt=""
             width={56}
             height={56}
-            className="h-12 w-12 sm:h-14 sm:w-14"
+            className="h-10 w-10 sm:h-14 sm:w-14"
             priority
           />
-          <span className="font-display text-xl sm:text-2xl text-brick-700 tracking-tight">
+          <span className="font-display text-lg sm:text-2xl text-brick-700 tracking-tight">
             Illi&rsquo;s Pizza
           </span>
         </Link>
@@ -52,7 +55,7 @@ export function Nav() {
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-md text-charcoal-800 hover:bg-crust-100"
+          className="md:hidden inline-flex items-center justify-center h-11 w-11 -mr-2 rounded-md text-charcoal-800 hover:bg-crust-100"
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             {open ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}

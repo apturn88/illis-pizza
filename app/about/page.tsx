@@ -23,14 +23,14 @@ export default function About() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/85 via-charcoal-900/70 to-charcoal-900" />
         </div>
-        <div className="mx-auto max-w-4xl px-5 sm:px-8 py-28 sm:py-36 text-center">
+        <div className="mx-auto max-w-4xl px-5 sm:px-8 py-24 sm:py-36 text-center">
           <p className="divider-leaf justify-center text-crust-200/80">
             &#10042; Our Story &#10042;
           </p>
-          <h1 className="mt-6 font-display text-5xl sm:text-6xl leading-tight">
+          <h1 className="mt-5 sm:mt-6 font-display text-[2.1rem] leading-[1.1] sm:text-6xl sm:leading-tight">
             A small oven, a long ferment, and a corner of Belmont we call home.
           </h1>
-          <p className="mt-6 text-crust-100/85 leading-relaxed">
+          <p className="mt-5 sm:mt-6 text-base sm:text-lg text-crust-100/85 leading-relaxed">
             We opened Illi&rsquo;s in 2024 with a simple idea: cook the kind of pizza we&rsquo;d
             want for ourselves &mdash; honest, unrushed, and made with what&rsquo;s grown nearby.
           </p>
@@ -38,7 +38,7 @@ export default function About() {
       </section>
 
       {/* STORY */}
-      <section className="mx-auto max-w-3xl px-5 sm:px-8 mt-20 space-y-10 text-lg leading-relaxed text-charcoal-800">
+      <section className="mx-auto max-w-3xl px-5 sm:px-8 mt-16 sm:mt-20 space-y-8 sm:space-y-10 text-base sm:text-lg leading-relaxed text-charcoal-800">
         <p>
           The name comes from a kitchen nickname &mdash; the kind that sticks because nobody can
           quite remember why. The mountains in our logo come from where we grew up, half an
@@ -62,7 +62,7 @@ export default function About() {
 
       {/* TENETS */}
       <section className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-8 sm:gap-10 md:grid-cols-3">
           <Tenet
             title="A short menu, done right"
             body="Six pies, a few salads, a few sides. We&rsquo;d rather make a small list well than a long list okay."
@@ -79,7 +79,7 @@ export default function About() {
       </section>
 
       {/* IMAGE STRIP */}
-      <section className="mx-auto max-w-6xl px-5 sm:px-8 mt-24">
+      <section className="mx-auto max-w-6xl px-5 sm:px-8 mt-16 sm:mt-24">
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
             <Image
@@ -103,8 +103,8 @@ export default function About() {
       </section>
 
       {/* QUOTE */}
-      <section className="mx-auto max-w-3xl px-5 sm:px-8 mt-24 text-center">
-        <blockquote className="font-display text-3xl sm:text-4xl text-brick-700 leading-snug">
+      <section className="mx-auto max-w-3xl px-5 sm:px-8 mt-16 sm:mt-24 text-center">
+        <blockquote className="font-display text-2xl sm:text-4xl text-brick-700 leading-snug">
           &ldquo;Make food you&rsquo;d want to eat on a Tuesday, not just on your birthday.&rdquo;
         </blockquote>
         <p className="mt-6 text-sm tracking-widest uppercase text-charcoal-700/70">
@@ -113,24 +113,24 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className="mt-24 bg-brick-700 text-crust-50">
-        <div className="mx-auto max-w-4xl px-5 sm:px-8 py-20 text-center">
-          <h2 className="font-display text-4xl sm:text-5xl">
+      <section className="mt-16 sm:mt-24 bg-brick-700 text-crust-50">
+        <div className="mx-auto max-w-4xl px-5 sm:px-8 py-16 sm:py-20 text-center">
+          <h2 className="font-display text-3xl sm:text-5xl">
             Come say hi.
           </h2>
           <p className="mt-4 text-crust-100/85">
             We&rsquo;re open Tuesday through Sunday in Belmont, SW Calgary.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap justify-center gap-3 sm:gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center rounded-full bg-crust-50 text-brick-700 hover:bg-crust-100 px-7 py-3.5 text-sm tracking-widest uppercase transition"
+              className="inline-flex items-center justify-center rounded-full bg-crust-50 text-brick-700 hover:bg-crust-100 px-7 py-3.5 text-sm tracking-widest uppercase transition"
             >
               Plan a visit
             </Link>
             <Link
               href="/"
-              className="inline-flex items-center rounded-full border border-crust-50/40 hover:border-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
+              className="inline-flex items-center justify-center rounded-full border border-crust-50/40 hover:border-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
             >
               See the menu
             </Link>

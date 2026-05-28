@@ -1,8 +1,15 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Playfair_Display, Inter } from 'next/font/google';
 import './globals.css';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
+
+export const viewport: Viewport = {
+  themeColor: '#fbf7f0',
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+};
 
 const display = Playfair_Display({
   subsets: ['latin'],

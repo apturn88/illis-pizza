@@ -67,28 +67,28 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-charcoal-900/70 via-charcoal-900/40 to-charcoal-900/85" />
         </div>
 
-        <div className="mx-auto max-w-6xl px-5 sm:px-8 py-28 sm:py-40 text-crust-50">
-          <p className="text-xs sm:text-sm tracking-[0.4em] uppercase text-crust-200/80">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8 py-24 sm:py-40 text-crust-50">
+          <p className="text-[0.7rem] sm:text-sm tracking-[0.35em] sm:tracking-[0.4em] uppercase text-crust-200/80">
             Belmont &middot; Calgary &middot; Alberta
           </p>
-          <h1 className="mt-5 font-display text-5xl sm:text-7xl leading-[1.05] max-w-3xl">
+          <h1 className="mt-4 sm:mt-5 font-display text-[2.4rem] leading-[1.05] sm:text-7xl max-w-3xl">
             Pizza worth coming&nbsp;home&nbsp;for.
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-crust-100/85 leading-relaxed">
+          <p className="mt-5 sm:mt-6 max-w-xl text-base sm:text-lg text-crust-100/85 leading-relaxed">
             Naples-style pies, baked in a wood-fired oven, made with ingredients from the
             foothills we live in. A neighbourhood spot in Belmont, built for slow Friday nights
             and quick weekday slices.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               href="/contact#order"
-              className="inline-flex items-center rounded-full bg-brick-600 hover:bg-brick-500 text-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition shadow-lg shadow-charcoal-900/30"
+              className="inline-flex items-center justify-center rounded-full bg-brick-600 hover:bg-brick-500 text-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition shadow-lg shadow-charcoal-900/30"
             >
               Order pickup
             </Link>
             <Link
               href="#menu"
-              className="inline-flex items-center rounded-full border border-crust-50/50 hover:border-crust-50 text-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
+              className="inline-flex items-center justify-center rounded-full border border-crust-50/50 hover:border-crust-50 text-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
             >
               See the menu
             </Link>
@@ -98,7 +98,7 @@ export default function Home() {
 
       {/* VALUE STRIP */}
       <section className="bg-brick-700 text-crust-50">
-        <div className="mx-auto max-w-6xl px-5 sm:px-8 py-14 grid gap-10 sm:grid-cols-3">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8 py-12 sm:py-14 grid gap-8 sm:gap-10 sm:grid-cols-3">
           {values.map((v) => (
             <div key={v.title} className="flex flex-col">
               <span className="text-xs tracking-[0.3em] uppercase text-crust-100/70">
@@ -115,10 +115,10 @@ export default function Home() {
       </section>
 
       {/* SIGNATURE PIES */}
-      <section id="menu" className="mx-auto max-w-6xl px-5 sm:px-8 pt-20">
+      <section id="menu" className="mx-auto max-w-6xl px-5 sm:px-8 pt-16 sm:pt-20 scroll-mt-24">
         <div className="flex flex-col items-center text-center">
           <span className="divider-leaf">&#10042; Our pies &#10042;</span>
-          <h2 className="mt-5 font-display text-4xl sm:text-5xl text-brick-700">
+          <h2 className="mt-5 font-display text-3xl sm:text-5xl text-brick-700">
             Six pies, made with intention.
           </h2>
           <p className="mt-4 max-w-2xl text-charcoal-700/90">
@@ -127,7 +127,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 sm:mt-14 grid gap-x-10 gap-y-9 sm:gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {pies.map((p) => (
             <article key={p.name} className="border-t border-crust-200 pt-6">
               <div className="flex items-baseline justify-between gap-4">
@@ -176,8 +176,8 @@ export default function Home() {
       </section>
 
       {/* STOREFRONT CALLOUT */}
-      <section className="mx-auto max-w-6xl px-5 sm:px-8 mt-24">
-        <div className="grid gap-10 lg:grid-cols-2 items-center">
+      <section className="mx-auto max-w-6xl px-5 sm:px-8 mt-16 sm:mt-24">
+        <div className="grid gap-8 sm:gap-10 lg:grid-cols-2 items-center">
           <div className="relative aspect-[5/4] overflow-hidden rounded-sm">
             <Image
               src="/images/storefront.png"
@@ -189,7 +189,7 @@ export default function Home() {
           </div>
           <div>
             <span className="divider-leaf">&#10042; Visit us &#10042;</span>
-            <h2 className="mt-5 font-display text-4xl sm:text-5xl text-brick-700">
+            <h2 className="mt-5 font-display text-3xl sm:text-5xl text-brick-700">
               A corner of Belmont, with the lights on.
             </h2>
             <p className="mt-5 text-charcoal-700/90 leading-relaxed">
@@ -198,16 +198,16 @@ export default function Home() {
               that&rsquo;s always going. Walk in, call ahead, or order for pickup &mdash; we&rsquo;re
               ready when you are.
             </p>
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-7 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center rounded-full bg-brick-700 hover:bg-brick-800 text-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
+                className="inline-flex items-center justify-center rounded-full bg-brick-700 hover:bg-brick-800 text-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
               >
                 Hours &amp; directions
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center text-sm tracking-widest uppercase text-brick-700 hover:text-brick-800 underline underline-offset-8 decoration-1 py-3.5"
+                className="inline-flex items-center justify-center sm:justify-start text-sm tracking-widest uppercase text-brick-700 hover:text-brick-800 underline underline-offset-8 decoration-1 py-3.5"
               >
                 Our story &rarr;
               </Link>
@@ -217,28 +217,28 @@ export default function Home() {
       </section>
 
       {/* CTA BAND */}
-      <section className="mt-24 bg-charcoal-900 text-crust-50">
-        <div className="mx-auto max-w-6xl px-5 sm:px-8 py-20 text-center">
+      <section className="mt-16 sm:mt-24 bg-charcoal-900 text-crust-50">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8 py-16 sm:py-20 text-center">
           <p className="divider-leaf justify-center text-crust-200/80">
             &#10042; Friday night &#10042;
           </p>
-          <h2 className="mt-5 font-display text-4xl sm:text-5xl">
+          <h2 className="mt-5 font-display text-3xl sm:text-5xl">
             Come for the pizza. Stay for the table.
           </h2>
           <p className="mt-5 max-w-2xl mx-auto text-crust-100/80">
             Reservations aren&rsquo;t required, but on weekends they&rsquo;re wise. Six tops or
             larger, give us a call.
           </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row sm:flex-wrap justify-center gap-3 sm:gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center rounded-full bg-brick-600 hover:bg-brick-500 text-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
+              className="inline-flex items-center justify-center rounded-full bg-brick-600 hover:bg-brick-500 text-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
             >
               Book a table
             </Link>
             <a
               href="tel:+14035550142"
-              className="inline-flex items-center rounded-full border border-crust-50/40 hover:border-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
+              className="inline-flex items-center justify-center rounded-full border border-crust-50/40 hover:border-crust-50 px-7 py-3.5 text-sm tracking-widest uppercase transition"
             >
               (403) 555&#8209;0142
             </a>
